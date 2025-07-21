@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTBL Assignment Deliverables</title>
+    <!-- Favicon -->
+    <link rel="icon" href="Alsama.jpg" type="image/x-icon">
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        header {
+            background-color: #0056b3; /* Alsama blue */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .intro-section {
+            background-color: #ff8c42; /* Alsama orange */
+            color: white;
+            padding: 30px;
+            margin: 20px auto;
+            max-width: 900px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            gap: 20px;
+        }
+        .subject-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 300px;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #0056b3; /* Alsama blue */
+            transition: transform 0.3s;
+            cursor: pointer;
+            border: 2px solid #ff8c42; /* Alsama orange */
+        }
+        .subject-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+            background-color: #ff8c42; /* Alsama orange */
+            color: white;
+        }
+        footer {
+            background-color: #0056b3; /* Alsama blue */
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        /* Subject page styles */
+        .subject-content {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            display: none;
+            border-top: 5px solid #ff8c42; /* Alsama orange */
+        }
+        .arabic-content {
+            direction: rtl;
+            text-align: right;
+            line-height: 1.8;
+            font-size: 18px;
+        }
+        .arabic-content h2, .arabic-content h3 {
+            color: #0056b3; /* Alsama blue */
+        }
+        .arabic-content h2 {
+            border-bottom: 2px solid #ff8c42; /* Alsama orange */
+            padding-bottom: 10px;
+        }
+        .english-content {
+            line-height: 1.6;
+            font-size: 16px;
+        }
+        .english-content h2, .english-content h3 {
+            color: #0056b3; /* Alsama blue */
+        }
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        .nav-button {
+            padding: 10px 20px;
+            background-color: #0056b3; /* Alsama blue */
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+        .nav-button:hover {
+            background-color: #ff8c42; /* Alsama orange */
+        }
+        .video-link {
+            display: block;
+            margin: 15px 0;
+            color: #0056b3; /* Alsama blue */
+            text-decoration: none;
+            word-break: break-all;
+        }
+        .video-link:hover {
+            color: #ff8c42; /* Alsama orange */
+            text-decoration: underline;
+        }
+        #main-page {
+            display: block;
+        }
+        ol, ul {
+            padding-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Main Page -->
+    <div id="main-page">
+        <header>
+            <h1>All the Deliverables for the CTBL Assignment</h1>
+        </header>
+
+        <div class="intro-section">
+            <h2>Sunlight & Mental Health Project</h2>
+            <p>Welcome to our CTBL (Critical Thinking, Blended Learning) assignment project! Our team explored the fascinating connection between sunlight exposure and mental health. Through scientific investigation, data analysis, and awareness campaigns, we discovered how simple daily habits can significantly improve our mood and overall wellbeing.</p>
+            
+            <h3>Our Mission</h3>
+            <p>We aimed to demonstrate how increased sunlight exposure can positively impact mental health, particularly for students and refugees who may spend most of their time indoors. Our interdisciplinary approach combines scientific research with practical applications.</p>
+            
+            <h3>Project Highlights</h3>
+            <ul>
+                <li>7-day experiment tracking sunlight exposure vs. mood</li>
+                <li>Data analysis and visualization</li>
+                <li>Awareness campaign materials</li>
+                <li>Social impact assessment</li>
+            </ul>
+            
+            <p>Explore our deliverables by clicking on the subject cards below. Each subject area contributes a unique perspective to our comprehensive project.</p>
+        </div>
+
+        <div class="container">
+            <div class="subject-card" onclick="showSubject('arabic')">Arabic</div>
+            <div class="subject-card" onclick="showSubject('english')">English</div>
+            <div class="subject-card" onclick="showSubject('math')">Math</div>
+            <div class="subject-card" onclick="showSubject('science')">Science</div>
+            <div class="subject-card" onclick="showSubject('awareness')">Awareness</div>
+            <div class="subject-card" onclick="showSubject('professionalism')">Professionalism</div>
+        </div>
+
+        <footer>
+            <p>This work was made by Abedalkhaleq, Safa, Wissal, and Aya.</p>
+        </footer>
+    </div>
+
+    <!-- Arabic Subject Page -->
+    <div id="arabic" class="subject-content">
+        <h1>Arabic Deliverable</h1>
+        <div class="arabic-content">
+            <h2>كل دقيقة في الشمس ... خطوة نحو مزاج أفضل</h2>
+            <h3>دليلك نحو صحة نفسية مشرفة في دقائق يومية بسيطة</h3>
+            
+            <h3>من نحن؟</h3>
+            <p>أجرينا تجربة علمية هدفها إيجاد حلول بسيطة وعملية لتحسين الصحة النفسية في مجتمعنا، وقدرنا أن ننشر هذه المعرفة من خلال كتيب بسيط يصل لكل الناس.</p>
+            
+            <h3>مقدمة:</h3>
+            <p>في زمن يتزايد فيه الضغط النفسي ونمط الحياة السريع، نبحث جميعًا عن طرق بسيطة لتحسين مزاجنا وصحتنا النفسية. ومن خلال تجربة علمية أجريناها، اكتشفنا أن التعرض المنتظم لأشعة الشمس يمكن أن يكون الخطوة الأولى نحو مزاج أفضل وحياة أكثر توازناً.</p>
+            <p>فما هو سر الشمس؟ وكيف يمكننا الاستفادة منها بسهولة؟ هذا ما يقدمه لك هذا الكتيب.</p>
+            
+            <h3>قصة من الواقع: خطوة صغيرة تعني الكثير</h3>
+            <p>تخيل طالبًا يذهب إلى المدرسة يوميًا وهو يشعر بالتعب والتوتر ومزاج سيء. قرّر أن يخرج من منزله 15 دقيقة أبكر ليستمع بهدوء تحت ضوء الشمس.</p>
+            <p>بعد أسبوع، لاحظ أنه بدأ يضحك أكثر، يشارك بثقة، ويشعر بطاقة مختلفة. هذه ليست مجرد قصة، بل حقيقة رأيناها بأنفسنا من خلال تجربتنا.</p>
+            
+            <h3>ما العلاقة بين الشمس والمزاج؟</h3>
+            <p>أشعة الشمس ليست مجرد ضوء ودفء، بل محفّز طبيعي لراحة الإنسان النفسية. حيث يساعد التعرض المعتدل للشمس على تحفيز الجسم لإنتاج السيروتونين، وهي مادة كيميائية تعرف باسم "هرمون السعادة" لها دور مباشر في تقليل الاكتئاب وتحسين المزاج.</p>
+            <p>كما تساهم الشمس في إنتاج فيتامين D، الضروري لصحة العظام والمناعة، وله تأثير مباشر على الحالة النفسية.</p>
+            
+            <h3>هل تعلم؟</h3>
+            <p>هل تعلم أن التعرض للشمس لمدة 15 دقيقة يوميًا يمكن أن يرفع مستوى السيروتونين بنسبة تصل إلى 30%، مما يحسن المزاج والطاقة ويقلل القلق حسب ما أشارت الأبحاث العلمية؟</p>
+            
+            <h3>تطبيق التجربة: ما الذي قمنا به؟</h3>
+            <p>خلال تجربتنا، تتبعنا تأثير التعرض اليومي للشمس على شخص من أعضاء الفريق. بعد أيام قليلة من المشي تحت الشمس لمدة 15 إلى 30 دقيقة، بدأت المشاركة تشعر بتحسن ملحوظ في المزاج، وزيادة في النشاط، وانخفاض في التوتر.</p>
+            <p>حيث قالت: "كنت دائمًا أشعر بالتعب والملل، لكن بعد ما أصبحت أتمشى بالشمس يوميًا، أصبحت أشعر بنشاط وراحة نفسية كما تحسن أدائي في المدرسة".</p>
+            
+            <h3>كيف تساهم هذه الاستراتيجية في تحسين الصحة العامة؟</h3>
+            <p>من خلال اعتماد عادة يومية بسيطة وهي التعرض الآمن لأشعة الشمس، يمكن أن نحقق:</p>
+            <ul>
+                <li>تحسن في الحالة النفسية وانخفاض مستويات الاكتئاب</li>
+                <li>زيادة النشاط البدني بسبب تحسن المزاج</li>
+                <li>تقوية جهاز المناعة وتحسين الصحة الجسدية</li>
+                <li>رفع الإنتاجية والتركيز سواء في الدراسة أو العمل</li>
+            </ul>
+            
+            <h3>خطوات عملية لتطبيق الاستراتيجية</h3>
+            <p>إليك دليلًا بسيطًا لتبدأ أنت أيضًا بتطبيق هذه التجربة:</p>
+            <ol>
+                <li>خصص وقتًا للشمس يوميًا، ويفضل في الصباح الباكر أو قبل الغروب</li>
+                <li>استبدل الجلوس داخل المنزل بجلسة في الشرفة أو الحديقة</li>
+                <li>استغل فترات الاستراحة المدرسية للخروج إلى فناء المدرسة</li>
+                <li>اقترح على أصدقائك نشاطات خارجية بسيطة مثل المشي أو الفطور في الهواء الطلق</li>
+                <li>اجعلها عادة يومية مثل شرب الماء</li>
+            </ol>
+            
+            <h3>نصائح للاستفادة من الشمس بأمان:</h3>
+            <ul>
+                <li>خصص 15-30 دقيقة يوميًا في الصباح الباكر أو قبل الغروب</li>
+                <li>اشرب الماء أثناء التعرض لأشعة الشمس</li>
+                <li>استخدم كريم واقي أو نظارات شمسية إذا بقيت لفترة طويلة</li>
+                <li>تجنب الشمس الحارة بين الساعة 12 ظهرًا و3 عصرًا</li>
+            </ul>
+            
+            <h3>خاتمة:</h3>
+            <p>الشمس ليست فقط مصدرًا للدفء، بل هي مفتاح سهل ومجاني لتحسين حياتنا النفسية والجسدية. فلنبدأ بخطوة صغيرة تحت ضوء الشمس، ونراقب كيف تتغير مشاعرنا ونشاطنا نحو الأفضل.</p>
+            <p><strong>ابدأ اليوم، وكن أنت التغيير الذي تود أن تراه في صحتك!</strong></p>
+        </div>
+        <div class="nav-buttons">
+            <button class="nav-button" onclick="showMainPage()">Back to Subjects</button>
+            <button class="nav-button" onclick="showSubject('english')">Next Subject</button>
+        </div>
+    </div>
+
+    <!-- English Subject Page -->
+    <div id="english" class="subject-content">
+        <div class="english-content">
+            <h2>English Deliverable</h2>
+            <p>English content is not available, because the work was individually.</p>
+        </div>
+        <div class="nav-buttons">
+            <button class="nav-button" onclick="showSubject('arabic')">Previous Subject</button>
+            <button class="nav-button" onclick="showMainPage()">Back to Subjects</button>
+            <button class="nav-button" onclick="showSubject('math')">Next Subject</button>
+        </div>
+    </div>
+
+    <!-- Math Subject Page -->
+    <div id="math" class="subject-content">
+        <h1>Math Deliverable</h1>
+        <div class="english-content">
+            <!-- Line Graph Image -->
+            <h4>Our Data</h4>
+                <p>Team member Safa conducted the experiment with these results:</p>
+                <table border="1">
+                    <tr>
+                        <th></th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                        <th>Saturday</th>
+                        <th>Sunday</th>
+                    </tr>
+                    <tr>
+                        <td>Minutes of sunlight</td>
+                        <td>5</td>
+                        <td>7</td>
+                        <td>25</td>
+                        <td>10</td>
+                        <td>30</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Mood (1-10)</td>
+                        <td>2</td>
+                        <td>4</td>
+                        <td>7</td>
+                        <td>5</td>
+                        <td>9</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                </table>
+                    <h4>Results Graph</h4>
+                    <img src="sunlight_mood_graph.jpg" alt="Line graph showing relationship between sunlight exposure and mood" width="600">
+                    <p><em>Figure 1: Correlation between minutes of sunlight exposure and mood rating over 7 days</em></p>
+        </div>
+        <div class="nav-buttons">
+            <button class="nav-button" onclick="showSubject('english')">Previous Subject</button>
+            <button class="nav-button" onclick="showMainPage()">Back to Subjects</button>
+            <button class="nav-button" onclick="showSubject('science')">Next Subject</button>
+        </div>
+    </div>
+
+    <!-- Science Subject Page -->
+    <div id="science" class="subject-content">
+    <div>
+        <h1>Science Deliverable</h1>
+        
+        <!-- Experiment Section -->
+        <div>
+            <h3>7-Day Sun Exposure vs Mood Experiment</h3>
+            
+            <!-- Deliverable 1 -->
+            <div>
+                <h4>Experiment and Hypothesis</h4>
+                <p>
+                    This project explores the relationship between sunlight exposure and mood over a one-week period.
+                    Participants log the amount of time they spend in direct sunlight each day and rate their mood on a scale from 1 to 10.
+                </p>
+                <div>
+                    <strong>Hypothesis:</strong>
+                    <p>If participants are exposed to more sunlight during the day, then their daily mood rating will improve,
+                        because sunlight is known to increase the brain's production of serotonin, a chemical linked to mood regulation.</p>
+                </div>
+            </div>
+
+            <!-- Deliverable 2 -->
+            <div>
+                <h4>Interactive Experiment</h4>
+                <form id="data-form">
+                    <div id="inputs">
+                        <!-- JS will generate input fields -->
+                    </div>
+                    <button type="submit">Generate Chart</button>
+                </form>
+                <div>
+                    <canvas id="resultsChart"></canvas>
+                    <div id="summary"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Reflection Section -->
+        <div>
+            <h3>Science Reflection</h3>
+            
+            <div>
+                <h4>Our Experiment</h4>
+                <p>Our experiment is about sunlight exposure and how it affects our mood. We recorded a 7-day experiment where we tracked minutes of sun exposure and daily mood ratings (1-10). We then collected the data and created a line graph representing that data.</p>
+                
+                <h4>Our Data</h4>
+                <p>Team member Safa conducted the experiment with these results:</p>
+                <table border="1">
+                    <tr>
+                        <th></th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                        <th>Saturday</th>
+                        <th>Sunday</th>
+                    </tr>
+                    <tr>
+                        <td>Minutes of sunlight</td>
+                        <td>5</td>
+                        <td>7</td>
+                        <td>25</td>
+                        <td>10</td>
+                        <td>30</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Mood (1-10)</td>
+                        <td>2</td>
+                        <td>4</td>
+                        <td>7</td>
+                        <td>5</td>
+                        <td>9</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                </table>
+
+                <!-- Line Graph Image -->
+                <div>
+                    <h4>Results Graph</h4>
+                    <img src="sunlight_mood_graph.jpg" alt="Line graph showing relationship between sunlight exposure and mood" width="600">
+                    <p><em>Figure 1: Correlation between minutes of sunlight exposure and mood rating over 7 days</em></p>
+                </div>
+                
+                <h4>Our Conclusion</h4>
+                <p>We conclude that our hypothesis was correct. Based on the collected data, we noticed that when Safa got more sunlight exposure, her mood ratings increased. This supports the idea that sunlight exposure positively affects mood.</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <button onclick="showSubject('math')">Previous Subject</button>
+        <button onclick="showMainPage()">Back to Subjects</button>
+        <button onclick="showSubject('awareness')">Next Subject</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Generate input fields
+        const inputContainer = document.getElementById('inputs');
+        for (let i = 1; i <= 7; i++) {
+            inputContainer.innerHTML += `
+                <div>
+                    <strong>Day ${i}:</strong>
+                    Sunlight (min): <input type="number" name="sun${i}" required>
+                    Mood (1–10): <input type="number" name="mood${i}" min="1" max="10" required>
+                </div>
+            `;
+        }
+
+        // Chart generation
+        document.getElementById('data-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const dataPairs = [];
+            for (let i = 1; i <= 7; i++) {
+                const sunVal = parseFloat(document.querySelector(`[name="sun${i}"]`).value);
+                const moodVal = parseFloat(document.querySelector(`[name="mood${i}"]`).value);
+                dataPairs.push({ sun: sunVal, mood: moodVal });
+            }
+            dataPairs.sort((a, b) => a.sun - b.sun);
+            const sunData = dataPairs.map(d => d.sun);
+            const moodData = dataPairs.map(d => d.mood);
+
+            const ctx = document.getElementById('resultsChart').getContext('2d');
+            if (window.myChart) window.myChart.destroy();
+
+            window.myChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: sunData,
+                    datasets: [{
+                        label: 'Mood Rating (1–10)',
+                        data: moodData,
+                        borderColor: 'rgba(75, 192, 192, 1)',
+                        backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                        tension: 0.3,
+                        fill: true
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        x: { title: { display: true, text: 'Minutes of Sunlight' }},
+                        y: { 
+                            min: 0, 
+                            max: 10,
+                            title: { display: true, text: 'Mood Rating' }
+                        }
+                    }
+                }
+            });
+            document.getElementById("summary").textContent = 
+                "Results show that more sunlight exposure correlates with better mood ratings.";
+        });
+    </script>
+</div>
+    <!-- Awareness Subject Page -->
+    <div id="awareness" class="subject-content">
+        <h1>Awareness Deliverable</h1>
+        <div class="arabic-content">
+            <h2>مشمستي</h2>
+            <p>من صنع وصال وصفا واية وعبدالخالق.</p>
+            
+            <h3>ما هي مشمستي؟</h3>
+            <p>هي جلسة توعوية عن مدى أهمية ضوء الشمس في حياتنا وعلى صحتنا الجسدية والنفسية.</p>
+            <p>نحن نقضي معظم وقتنا في الداخل: في المدرسة، على الهاتف، أمام التلفاز. لكن هل تعلمون أن ضوء الشمس يمكنه تحسين مزاجك؟</p>
+            
+            <h3>ما علاقة الشمس في مزاجك؟</h3>
+            <p>ماذا ترى في هذا الفيديو القصير؟</p>
+            <a href="https://www.pinterest.com/pin/885168501739601734/" class="video-link" target="_blank">https://www.pinterest.com/pin/885168501739601734/</a>
+            
+            <p>والآن ماذا ترى في هذا الفيديو القصير؟</p>
+            <a href="https://www.pinterest.com/pin/294845106875679436/" class="video-link" target="_blank">https://www.pinterest.com/pin/294845106875679436/</a>
+            
+            <h3>ماذا يحدث عندما نفتقد ضوء الشمس؟</h3>
+            <ol>
+                <li>نشعر بالنعاس</li>
+                <li>نفقد الحماس</li>
+                <li>نميل للحزن أو التوتر</li>
+            </ol>
+            
+            <h3>ما الذي يفعله ضوء الشمس؟</h3>
+            <ol>
+                <li>يمنحك فيتامين D (جيد جداً للعظام)</li>
+                <li>يساعد الدماغ على إنتاج السيروتونين والذي هو (هرمون السعادة)</li>
+                <li>يحسن النوم عن طريق إنتاج الميلاتونين ليلاً وهو هرمون يساعد على النوم</li>
+                <li>يعزز الطاقة الإيجابية والنشاط</li>
+                <li>يقلل من التوتر والاكتئاب</li>
+            </ol>
+            
+            <h3>كم تحتاج من ضوء الشمس؟</h3>
+            <ol>
+                <li>فقط 10 إلى 15 دقيقة يومياً تكفي</li>
+                <li>الأفضل تلقي ضوء الشمس في الصباح أو وقت الظهيرة</li>
+                <li>يمكنك الجلوس، المشي، أو اللعب في الخارج للتعرض لضوء الشمس</li>
+                <li>التعرض لفترات محددة وعدم التعرض بشكل مفرط لها</li>
+                <li>يفضل أن تكون الذراعان أو الوجه مكشوفين (بدون واقي شمس خلال هذه الدقائق فقط)</li>
+            </ol>
+            
+            <h3>كيف نحصل على هذا الضوء؟</h3>
+            <ol>
+                <li>نتمشى في الحديقة أو فناء المدرسة</li>
+                <li>نجلس على الشرفة أو السطح</li>
+                <li>نمارس الرياضة في الهواء الطلق</li>
+                <li>ندرس أو نقرأ في مكان مشمس</li>
+            </ol>
+            
+            <h3>ماذا سنغير بعد اليوم؟</h3>
+            <p><strong>أكتب على ورقة وشارك بصوت عال:</strong></p>
+            <p>ما الذي ستفعله لتبحل ضوء الشمس جزءاً من يومك؟</p>
+            
+            <h3>نشر احسن استماعكم</h3>
+        </div>
+        <div class="nav-buttons">
+            <button class="nav-button" onclick="showSubject('science')">Previous Subject</button>
+            <button class="nav-button" onclick="showMainPage()">Back to Subjects</button>
+            <button class="nav-button" onclick="showSubject('professionalism')">Next Subject</button>
+        </div>
+    </div>
+
+    <!-- Professionalism Subject Page -->
+   <div id="professionalism" class="subject-content">
+   <h1>Professionalism Deliverable</h1>
+    <div>
+        <h2>Professionalism Deliverable</h2>
+        
+        <h3>Social Return on Investment (SROI) Analysis</h3>
+        
+        <table border="1" cellpadding="5" cellspacing="0">
+            <tr>
+                <th colspan="6">Expected Results</th>
+            </tr>
+            <tr>
+                <th>Outcomes</th>
+                <th>Targeted Audience</th>
+                <th>Number of people helped (1 year)</th>
+                <th>Social Impact Per Person</th>
+                <th>Total Social Impact Per Category</th>
+            </tr>
+            <tr>
+                <td>Mental health improvement</td>
+                <td>Refugee Children In Camps</td>
+                <td>4,000</td>
+                <td>15.00</td>
+                <td>60,000</td>
+            </tr>
+            <tr>
+                <td>Physical health improvement (fitness)</td>
+                <td>Refugee Children In Camps</td>
+                <td>2,000</td>
+                <td>15.00</td>
+                <td>30,000</td>
+            </tr>
+            <tr>
+                <td>Academic performance improvement</td>
+                <td>School Students</td>
+                <td>6,000</td>
+                <td>15.00</td>
+                <td>90,000</td>
+            </tr>
+            <tr>
+                <td>Increased awareness of sunlight issue</td>
+                <td>Teachers, Parents, Students & Refugees</td>
+                <td>3,000</td>
+                <td>15.00</td>
+                <td>45,000</td>
+            </tr>
+            <tr>
+                <td><strong>Total</strong></td>
+                <td></td>
+                <td><strong>15,000</strong></td>
+                <td></td>
+                <td><strong>225,000</strong></td>
+            </tr>
+        </table>
+
+        <h3>Expected Costs</h3>
+        <table border="1" cellpadding="5" cellspacing="0">
+            <tr>
+                <th>Expenses Categories</th>
+                <th>Cost Per Year</th>
+            </tr>
+            <tr>
+                <td>Renting and maintaining playgrounds</td>
+                <td>$18,000</td>
+            </tr>
+            <tr>
+                <td>Staff, volunteers, coordination</td>
+                <td>$7,000</td>
+            </tr>
+            <tr>
+                <td>Awareness campaign and materials</td>
+                <td>$3,000</td>
+            </tr>
+            <tr>
+                <td>Logistics</td>
+                <td>$2,000</td>
+            </tr>
+            <tr>
+                <td><strong>Total Cost</strong></td>
+                <td><strong>$30,000</strong></td>
+            </tr>
+        </table>
+
+        <h3>SROI Calculation</h3>
+        <p>
+            <strong>SROI = Total Social Impact / Total Costs</strong><br>
+            225,000 / 30,000 = <strong>7.5</strong>
+        </p>
+        <p>
+            <strong>Result:</strong> For every $1 invested in our project, $7.50 of social impact is generated.
+        </p>
+    </div>
+    <div>
+        <button onclick="showSubject('awareness')">Previous Subject</button>
+        <button onclick="showMainPage()">Back to Subjects</button>
+    </div>
+</div>
+
+    <script>
+        function showSubject(subjectId) {
+            // Hide main page and all subject pages
+            document.getElementById('main-page').style.display = 'none';
+            const allPages = document.querySelectorAll('.subject-content');
+            allPages.forEach(page => {
+                page.style.display = 'none';
+            });
+            
+            // Show the requested subject page
+            document.getElementById(subjectId).style.display = 'block';
+            window.scrollTo(0, 0);
+        }
+
+        function showMainPage() {
+            // Hide all subject pages
+            const allPages = document.querySelectorAll('.subject-content');
+            allPages.forEach(page => {
+                page.style.display = 'none';
+            });
+            
+            // Show main page
+            document.getElementById('main-page').style.display = 'block';
+            window.scrollTo(0, 0);
+        }
+    </script>
+</body>
+</html>
